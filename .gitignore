@@ -1,0 +1,8 @@
+#
+.DS_Store
+.vs/*
+artifacts/*
+packages/*
+*.xproj.user
+*.DotSettings.user
+
