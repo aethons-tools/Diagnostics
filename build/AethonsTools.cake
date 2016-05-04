@@ -24,7 +24,8 @@ Task("Version")
 		version = GitVersion(new GitVersionSettings
 		{
 			UpdateAssemblyInfo = true,
-			UpdateAssemblyInfoFilePath = "../src"
+			UpdateAssemblyInfoFilePath = "../src/VersionAssemblyInfo.cs",
+			ArgumentCustomization = args => args.Append("-ensureassemblyinfo")
 		});
 	});
 	
@@ -61,7 +62,7 @@ Task("Test")
 		 		.WithFilter("+[AethonsTools.*]*")// TODO
 		 );
 		 
-		 ReportGenerator($"{TestingFolder}/coverresults.xml", "{TestingFolder}/coverage");
+		 ReportGenerator($"{TestingFolder}/coverresults.xml", $"{TestingFolder}/coverage");
 	});
 
 Task("Package")
