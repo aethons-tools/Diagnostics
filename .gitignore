@@ -5,4 +5,4 @@ artifacts/*
 packages/*
 *.xproj.user
 *.DotSettings.user
-
+build/*
