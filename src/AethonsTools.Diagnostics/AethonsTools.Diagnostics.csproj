@@ -48,7 +48,8 @@
     <Compile Include="IDiagnostic.cs" />
     <Compile Include="IDiagnosticDescriptor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="..\VersionAssemblyInfo.cs" />
+    <Compile Include="..\..\Common\AssemblyInfo.Common.cs"/>
+    <Compile Include="..\..\Common\AssemblyInfo.Version.cs"/>
     <Compile Include="Severity.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
